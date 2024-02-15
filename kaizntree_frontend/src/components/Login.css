@@ -1,0 +1,69 @@
+/* Login.css */
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the space between form elements */
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust the font-size as necessary */
+  }
+  
+  .login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Kaizntree's brand color, adjust as needed */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #555; /* Slightly darker on hover */
+  }
+  
+  .login-container .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .login-container .create-account {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Assuming you have a logo to display above the form */
+  .login-logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .login-logo img {
+    max-width: 100px; /* Adjust the logo size as necessary */
+    margin-bottom: 20px;
+  }
+  
+  /* Add any additional global styles you need */
+  body {
+    font-family: 'Arial', sans-serif; /* Use a font that's close to the Kaizntree brand */
+    background: #f4f4f4; /* A light background for the page */
+    color: #333; /* A darker color for text */
+  }
+  
