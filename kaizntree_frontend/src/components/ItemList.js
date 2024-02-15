@@ -26,16 +26,45 @@ function ItemList() {
   }, []);
 
   return (
-    <div className="item-list">
-      {items.map(item => (
-        <div key={item.sku} className="item">
-          <div>{item.sku}</div>
-          <div>{item.name}</div>
-          {/* Add more item properties here as needed */}
+    <div className="dashboard-container">
+      <div className="top-bar">
+        {/* You will need to fetch and display summary data here */}
+        <div>Total Categories: {/* Categories count */}</div>
+        <div>Total Items: {/* Items count */}</div>
+      </div>
+      <div className="content">
+        <button className="new-category-btn">NEW ITEM CATEGORY</button>
+        {/* ... Other controls like subcategory and search ... */}
+        <div className="item-list">
+          <table>
+            <thead>
+              <tr>
+                <th>SKU</th>
+                <th>Name</th>
+                <th>Tags</th>
+                <th>Category</th>
+                <th>In Stock</th>
+                <th>Available Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              {items.map(item => (
+                <tr key={item.sku}>
+                  <td>{item.sku}</td>
+                  <td>{item.name}</td>
+                  <td>{/* Render tags here */}</td>
+                  <td>{item.category}</td>
+                  <td>{/* Render stock status indicator here */}</td>
+                  <td>{item.available_stock}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-      ))}
+      </div>
     </div>
   );
+
 }
 
 export default ItemList;
